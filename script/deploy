@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ssh app@ubuntuserver140412-hellojenkins-vnhnguo3.srv.ravcloud.com <<EOF
+  cd ~/hello-jenkins
+  git pull
+  npm install --production
+  forever restartall
+EOF
