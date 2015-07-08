@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-	res.send('hello mercedes');
+	res.send('hello mercedes s65 AMG Coupe');
 });
 
 app.listen(process.env.PORT || 5000);
